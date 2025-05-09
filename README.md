@@ -1,39 +1,54 @@
-# Instalacja repo
+# Repository Installation
 
-1. Pobierz NODE z https://nodejs.org/en
-2. po instalacji w cmd wklej: npm install -g npm@9.8.1
-3. Następnie, w tej samej sesji wklej: npm install -g roblox-ts
-4. Zainstaluj aftman z https://github.com/LPGhatguy/aftman/releases, wypakuj - kliknij w exe po czym otworz sesje terminala i wpisz aftman self-install
-5. Wklej w terminal nastepujaca komende i poczkeaj az serwer Rojo sie zainstaluje: aftman add rojo-rbx/rojo
-6. Wklej: aftman install
-7. Przejdz na github.com i skonfiguruj klucz SSH
-8. Pobierz najnowszą wersje place roblox bez skryptów
-9. Otwórz zainstalowany place
-10. Zainstaluj plugin Rojo z https://rojo.space/docs/v7/getting-started/installation/ > Installing the plugin > from Roblox.com
-11. Sklonuj repo z użyciem git clone [link z githuba po wybraniu Code > Clone > SSH]
-12. Otwórz sesje terminala w swoim IDE i wklej: npm i
-13. Po zakonczeniu sie instalacji paczek wklej w terminal: npm run watch
-14. Otwórz kolejną sesje terminala i wklej: rojo serve
-15. Przejdź na place i połącz plugin z serwerem
-16. Pisz kod
+    Download Node from https://nodejs.org/en
 
-# Pisanie kodu
+    After installation, paste this into the command line: npm install -g npm@9.8.1
 
-1. Typy definiuj z użyciem PascalCase
-2. Klasy definiuj z użyciem PascalCase
-3. Funkcje, zmienne etc. definiuj z użyciem camelCase
-4. Pliki nazywaj z użyciem snake_case
+    In the same session, paste: npm install -g roblox-ts
 
-# Skrypty npm
+    Install Aftman from https://github.com/LPGhatguy/aftman/releases, extract it, run the .exe, then open a terminal and type: aftman self-install
 
-## `npm run devbuild`
+    Paste this command in the terminal and wait for the Rojo server to install: aftman add rojo-rbx/rojo
 
-Kompiluje projekt do lua, tworzy plik `devbuild.rbxl` zawierający wszystkie modele gry i od razu otwiera go w roblox studio. Używaj go tylko jeśli nie masz place z aktualnymi modelami
+    Paste: aftman install
 
-## `npm run build`
+    Go to GitHub and set up your SSH key
 
-Kompiluje projekt do lua i od razu uruchamia server rojo. Używaj gdy już masz place z modelami i potrzebujesz przetestować kod.
+    Download the latest Roblox place file without scripts
 
-## `npm run watch`
+    Open the installed place file
 
-Uruchamia `rbxtsc` w trybie watch - kompilacja sie uruchamia przy kazdym zapisie/utworzeniu pliku w folderze projektu
+    Install the Rojo plugin from https://rojo.space/docs/v7/getting-started/installation/ > "Installing the plugin" > from Roblox.com
+
+    Clone the repo using git clone [SSH link from GitHub (Code > Clone > SSH)]
+
+    Open a terminal session in your IDE and paste: npm i
+
+    After packages finish installing, paste: npm run watch
+
+    Open another terminal session and paste: rojo serve
+
+    Go to the Roblox place and connect the plugin to the Rojo server
+
+    Start coding
+
+# Writing Code
+
+    Define types using PascalCase
+
+    Define classes using PascalCase
+
+    Use camelCase for functions, variables, etc.
+
+    Name files using snake_case
+
+# npm Scripts
+## npm run devbuild
+
+Compiles the project to Lua, creates a devbuild.rbxl file with all game models, and opens it in Roblox Studio. Use only if you don’t have a place with the current models.
+## npm run build
+
+Compiles the project to Lua and immediately starts the Rojo server. Use when you already have a place with models and want to test your code.
+## npm run watch
+
+Runs rbxtsc in watch mode — recompiles every time a file is saved or created in the project folder.
